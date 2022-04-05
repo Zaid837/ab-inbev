@@ -1,0 +1,63 @@
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 15%;
+  width: 85%;
+  height: 60px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 5px 20px;
+}
+.player-con {
+  display: flex;
+}
+
+.song-cover {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  background-size: cover;
+}
+.song-info {
+  padding: 10px 0;
+  text-align: justify;
+  display: flex;
+}
+
+span {
+  font-size: 16px;
+  color: #ccc;
+  cursor: pointer;
+}
+.play-btn {
+  font-size: 22px;
+  color: #6c63ff;
+}
+.line {
+  width: 600px;
+  height: 2px;
+  background-color: #ffb5a7;
+  margin-top: 11px;
+}
+@media screen and (max-width: 700px) {
+  .song-cover,
+  .song-title {
+    display: none;
+  }
+  .playback-controls {
+    display: flex;
+  }
+  .line {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .playback-controls {
+    display: flex;
+  }
+
+  .song-cover {
+    display: none;
+  }
+}

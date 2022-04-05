@@ -1,0 +1,48 @@
+.sidebar {
+  width: 15%;
+  height: 100%;
+  background: #574fd8;
+  margin: 0px;
+  transition: 0.5s;
+  padding-top: 50px;
+  /* box-shadow: 3px 0px 9px rgba(0, 0, 0, 0.05); */
+  position: fixed;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* vertical-align: middle; */
+}
+
+.sidelist {
+  font-size: 14px;
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.sidelist:hover {
+  background-color: #7a74e0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .avatar {
+    width: 50px;
+  }
+  .icon {
+    font-size: 18px;
+  }
+
+  .username {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 850px) {
+  .sidelist span {
+    display: none;
+  }
+}

@@ -1,0 +1,63 @@
+.title {
+  color: #808080;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.title-intro {
+  display: flex;
+}
+.line2 {
+  width: 650px;
+  height: 1px;
+  background-color: #ccc;
+}
+.new-releases::-webkit-scrollbar {
+  display: none;
+}
+
+.music-card {
+  margin-top: 20px;
+  height: 200px;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 20px;
+  cursor: pointer;
+}
+.music-card::-webkit-scrollbar {
+  display: none;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 120px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.music-cover {
+  width: 100%;
+  background-size: cover;
+}
+.name {
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 14px;
+    width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .line2{
+    width: 50px;
+  }
+}
